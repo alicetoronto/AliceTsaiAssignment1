@@ -108,3 +108,67 @@ h3 {
 main {
     background-color: #0f0632;
 }
+
+h2 {
+    font-size: 2.6rem;
+}
+
+.lineUp,
+.experiences {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.textContainer,
+.imgContainer {
+    width: 50%;
+}
+
+.textContainer {
+    padding: 0 100px;
+}
+
+.imgContainer {
+    min-width: 600px
+}
+
+img {
+    width: 100%;
+}
+
+.experiences .textContainer {
+    order: 1;
+    width: 50%;
+}
+
+.tickets {
+    background-color: #08080B;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 150px 0;
+}
+
+.tickets .imgContainer {
+    width: 25%;
+    min-width: 400px;
+}
+
+.tickets h2 {
+    margin: 0;
+}
+
+.tickets .textContainer {
+    width: 60%;
+    padding: 0;
+    margin-left: 50px;
+}
+
+/* Footer */
+
+footer {
+    background-color: #3d0369;
+}
