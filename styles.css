@@ -8,6 +8,10 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 
 .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
 
+* {
+    border: solid red 1px;
+}
+
 /* Base styles */
 
 html {
@@ -42,6 +46,10 @@ a {
     font-size: 1.25rem;
     font-family: 'Iceberg', cursive;
     background-color: #9200ff;
+    max-width: 175px;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    text-align: center;
 }
 
 /* Header */
@@ -50,22 +58,53 @@ header {
     background-image: url(./assets/image-1.png);
     background-size: cover;
     height: 100vh;
-    display: flex;
-    flex-direction: column;
 }
 
 nav li {
     margin: 50px 30px;
 }
 
+.mainHeadings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+}
+
 h1 {
-    width: 30%;
-    align-self: center;
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    margin-top: 110px;
+    margin: 0;
 }
 
 h3 {
     font-family: 'Montserrat', sans-serif;
-    
+    font-size: 1.75rem;
+    font-weight: 400;
+    background-color: #9200ff;
+    text-transform: lowercase;
+    margin: 0;
+    padding: 10px;
+}
+
+.socialMedia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    right: 3%;
+    top: 45%;
+    z-index: 10;
+}
+
+.socialMedia a {
+    margin: 5px;
+}
+
+/* Main */
+
+main {
+    background-color: #0f0632;
 }
