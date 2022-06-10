@@ -1,0 +1,160 @@
+/* Header */
+
+header {
+    background-image: url(../assets/image-1.png);
+    background-size: cover;
+    height: 100vh;
+}
+
+.mainHeadings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+}
+
+h1 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0;
+    line-height: 80px;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.75rem;
+    font-weight: 400;
+    background-color: #9200ff;
+    text-transform: lowercase;
+    margin: 15px;
+    padding: 10px 20px;
+}
+
+.socialMedia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    right: 3.5%;
+    top: 40%;
+    z-index: 10;
+
+    a {
+        margin: 8px;
+        font-size: 1.25rem;
+    }
+}
+
+/* Main */
+
+main {
+    background-color: #0f0632;
+}
+
+h2 {
+    font-size: 2.6rem;
+    margin: 30px 0 0 0;
+}
+
+.lineUp,
+.experiences {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.textContainer,
+.imgContainer {
+    width: 50%;
+}
+
+.textContainer {
+    padding: 0 70px;
+}
+
+.imgContainer {
+    min-width: 500px
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+.experiences .textContainer {
+    order: 1;
+}
+
+.tickets {
+    background-color: #08080B;
+    padding: 150px 0;
+
+    .wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 0 70px;
+    }
+
+    .imgContainer {
+        width: 30%;
+        min-width: 300px;
+    }
+
+    .textContainer {
+        width: calc(70% - 70px);
+        padding: 0;
+        margin: 0 0 0 70px;
+    }
+
+    h2 {
+        margin: 0;
+    }
+}
+
+/* Footer */
+
+footer {
+    background-color: #3d0369;
+    h2 {
+        margin: 0 0 15px 0;
+    }
+    p {
+        margin: 2px 0;
+    }
+}
+
+.contact.subscribe {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 100px 0;
+    .contact,
+    .subscribe {
+        width: 50%;
+    }
+}
+
+label {
+    width: 100%;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+input {
+    width: 70%;
+    font-size: 1.25rem;
+    padding: 10px;
+    border: none;
+    margin: 0;
+}
+
+.copyright {
+    background-color: #0f0632;
+    margin: 0;
+    text-align: center;
+    padding: 15px 0;
+}
