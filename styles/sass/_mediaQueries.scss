@@ -1,21 +1,33 @@
 //hover
 
-@media (max-width: 1355px) {
-    .lineUp {
-        .textContainer,
+//variable colours
+
+
+@media (max-width: 1200px) {
+    .tickets {
         .imgContainer {
-            flex-basis: 50%;
+            width: 30%;
+            min-width: 300px;
         }
         .textContainer {
-            flex-grow: 3;
+            width: calc(70% - 70px);
         }
-        .imgContainer {
-            flex-shrink: 3;
+    }
+
+    .contact.subscribe {
+        .subscribe {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+        }
+        input {
+            width: 100%;
         }
     }
 }
 
-@media (max-width: 810px) {
+
+@media (max-width: 900px) {
     html {
         font-size: 100%;
     }
@@ -58,6 +70,9 @@
     }
 
     .tickets {
+        .wrapper {
+            flex-wrap: wrap;
+        }
         padding: 40px 30px 0 30px;
             .imgContainer,
             .textContainer {
@@ -83,13 +98,15 @@
 
     .contact.subscribe {
         flex-direction: column;
-        align-items: center;
         text-align: center;
         margin: 0;
             .contact,
             .subscribe {
                 width: 100%;
                 margin-bottom: 70px;
+            }
+            .subscribe {
+                justify-content: center;
             }
             input,
             button {
