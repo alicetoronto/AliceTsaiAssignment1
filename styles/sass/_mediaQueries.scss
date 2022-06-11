@@ -1,0 +1,150 @@
+//hover
+
+@media (max-width: 1355px) {
+    .lineUp {
+        .textContainer,
+        .imgContainer {
+            flex-basis: 50%;
+        }
+        .textContainer {
+            flex-grow: 3;
+        }
+        .imgContainer {
+            flex-shrink: 3;
+        }
+    }
+}
+
+@media (max-width: 810px) {
+    html {
+        font-size: 100%;
+    }
+    
+    .wrapper {
+        width: 100%;
+    }
+
+    .lineUp,
+    .experiences {
+        flex-direction: column;
+    }
+
+    .textContainer,
+    .imgContainer {
+        width: 100%;
+    }
+
+    .textContainer {
+        padding: 40px 30px;
+    }
+
+    .lineUp .textContainer {
+        order: 1;
+    }
+
+    .imgContainer {
+        height: 45vh;
+        min-width: 0;
+    }
+
+    img {
+        height: 100%;
+        object-fit: cover;
+        object-position: 50% 20%;
+    }
+
+    .readMore {
+        margin: 20px auto;
+    }
+
+    .tickets {
+        padding: 40px 30px 0 30px;
+            .imgContainer,
+            .textContainer {
+                width: 100%;
+                margin: 0;
+            }
+            .textContainer {
+                padding: 40px 0;
+            }
+            .wrapper {
+                padding: 0;
+            }
+    }
+
+    ul {
+        justify-content: space-evenly;
+        padding: 0;
+    }
+
+    nav li {
+        margin: 50px 0px;
+    }
+
+    .contact.subscribe {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 0;
+            .contact,
+            .subscribe {
+                width: 100%;
+                margin-bottom: 70px;
+            }
+            input,
+            button {
+                width: calc(100% - 60px);
+                max-width: calc(100% - 60px);
+                margin: 5px 0;
+            }
+    }
+}
+
+@media (max-width: 385px) {
+    html {
+            font-size: 95%;
+        }
+    
+    h2 {
+        margin-top: 0px;
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+        padding: 10px 15px;
+    }
+
+    header {
+        height: 70vh;
+
+        nav,
+        .socialMedia {
+            display: none;
+        }
+
+        h1 {
+            margin-top: 30vh;
+        }
+    }
+
+    .textContainer {
+        padding: 30px 15px;
+    }
+
+    .imgContainer {
+        height: 30vh;
+    }
+
+    .tickets {
+        padding: 40px 15px 0 15px;
+    }
+
+    .contact.subscribe {
+        input,
+        button {
+            width: calc(100% - 30px);
+            max-width: calc(100% - 30px);
+        }
+    }
+}

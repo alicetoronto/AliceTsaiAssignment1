@@ -3,6 +3,7 @@
 header {
     background-image: url(../assets/image-1.png);
     background-size: cover;
+    background-position: center;
     height: 100vh;
 }
 
@@ -55,13 +56,12 @@ main {
 
 h2 {
     font-size: 2.6rem;
-    margin: 30px 0 0 0;
+    margin: 0;
 }
 
 .lineUp,
 .experiences {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 }
@@ -72,12 +72,12 @@ h2 {
 }
 
 .textContainer {
-    padding: 0 70px;
+    padding: 50px 70px;
 }
 
-.imgContainer {
-    min-width: 500px
-}
+// .imgContainer {
+//     min-width: 500px
+// }
 
 img {
     width: 100%;
@@ -147,9 +147,13 @@ label {
 input {
     width: 70%;
     font-size: 1.25rem;
-    padding: 10px;
+    padding: 10px 15px;
     border: none;
     margin: 0;
+    height: 49px;
+}
+button {
+    height: 49px;
 }
 
 .copyright {
