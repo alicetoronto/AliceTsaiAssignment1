@@ -27,7 +27,7 @@ h3 {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.75rem;
     font-weight: 400;
-    background-color: #9200ff;
+    background-color: $vividPurple;
     text-transform: lowercase;
     margin: 15px;
     padding: 10px 20px;
@@ -51,7 +51,7 @@ h3 {
 /* Main */
 
 main {
-    background-color: #0f0632;
+    background-color: $darkIndigo;
 }
 
 h2 {
@@ -86,7 +86,7 @@ img {
 }
 
 .tickets {
-    background-color: #08080B;
+    background-color: $almostBlack;
     padding: 100px 0;
 
     .wrapper {
@@ -113,7 +113,7 @@ img {
 /* Footer */
 
 footer {
-    background-color: #3d0369;
+    background-color: $royalPurple;
     h2 {
         margin: 0 0 15px 0;
     }
@@ -132,14 +132,14 @@ footer {
     .subscribe {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: flex-start;
         width: 40%;
     }
 }
 
 label {
     width: 100%;
-    margin: 0 30px 15px 30px;
+    margin-bottom: 15px;
     display: inline-block;
 }
 
@@ -158,7 +158,7 @@ button {
 }
 
 .copyright {
-    background-color: #0f0632;
+    background-color: $darkIndigo;
     margin: 0;
     text-align: center;
     padding: 15px 0;

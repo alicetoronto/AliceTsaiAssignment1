@@ -1,3 +1,4 @@
+/* Setup Snippet */
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -306,10 +307,26 @@ nav li {
   margin: 50px 30px;
   text-transform: uppercase;
 }
+nav li a:hover,
+nav li a:focus {
+  color: #9200ff;
+}
 
 a {
   text-decoration: none;
   color: #ffffff;
+}
+
+a:hover,
+a:focus,
+button:hover,
+button:focus {
+  color: #0f0632;
+}
+
+input:hover,
+input:focus {
+  border: 3px solid #0f0632;
 }
 
 p {
@@ -496,15 +513,15 @@ footer p {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   width: 40%;
 }
 
 label {
   width: 100%;
-  margin: 0 30px 15px 30px;
+  margin-bottom: 15px;
   display: inline-block;
 }
 
@@ -636,15 +653,13 @@ button {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    text-align: center;
     margin: 0;
   }
   .contact.subscribe .contact,
 .contact.subscribe .subscribe {
     width: 100%;
     margin-bottom: 70px;
-  }
-  .contact.subscribe .subscribe {
+    text-align: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -698,5 +713,10 @@ header .socialMedia {
 .contact.subscribe button {
     width: calc(100% - 30px);
     max-width: calc(100% - 30px);
+  }
+
+  label {
+    margin-left: 15px;
+    margin-right: 15px;
   }
 }

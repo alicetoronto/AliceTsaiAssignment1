@@ -1,8 +1,3 @@
-//hover
-
-//variable colours
-
-
 @media (max-width: 1200px) {
     .tickets {
         .imgContainer {
@@ -98,14 +93,12 @@
 
     .contact.subscribe {
         flex-direction: column;
-        text-align: center;
         margin: 0;
             .contact,
             .subscribe {
                 width: 100%;
                 margin-bottom: 70px;
-            }
-            .subscribe {
+                text-align: center;
                 justify-content: center;
             }
             input,
@@ -163,5 +156,9 @@
             width: calc(100% - 30px);
             max-width: calc(100% - 30px);
         }
+    }
+    label {
+        margin-left: 15px;
+        margin-right: 15px;
     }
 }
